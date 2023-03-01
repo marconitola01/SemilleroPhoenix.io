@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--Pagina Semillero Phoenix (prototipo)-->
+    <title>Semillero Phoenix</title>
+
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/font-awesome.css">
+    <link rel="stylesheet" href="lib/css/sliderTW.css">
+    <link rel="stylesheet" href="lib/css/estilo.css">
+    <link rel="stylesheet" href="lib/css/header.css">
+    <link rel="stylesheet" href="lib/css/slider.css">
+    <link rel="stylesheet" href="lib/css/futa.css">
+    <link rel="stylesheet" href="lib/css/sliderTH.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--JQuery-->
+    <script src="lib/js/jquery-3.1.0.min.js"></script>
+    <script src="lib/js/slider.js"></script>
+    <!--Ajax-->
+    <script src="lib/ajax/tether.min.js"></script>
+    <!--Bootstrap-->
+    <script src="lib/js/popper.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <!--<script src="lib/js/jquery-3.3.1.slim.min.js"></script>-->
+
+</head>
+
+
+
+<body>
+
+    <div id="particles-js">
+        <header id="cabecera" class="navbar-fixed-top">
+            <nav id="menuFinal" class="navbar fixed-top navPr cabeceraInv">
+                <div class="">
+                    <div class="titulo" id="titulo">
+                        <a href="index.html">
+                            <h1 style="font-family: 'Anton', sans-serif;">Semillero Phoenix</h1>
+                        </a>
+                        <div id="noloc"></div>
+                    </div>
+                </div>
+                <div class="" id="listNav">
+                    <ul class="nav linkeds" id="inUl">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" onclick="actulizarNumeroPacman(0)"
+                                id="nav-item">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contenidoPrincipal1" onclick="actulizarNumeroPacman(1)"
+                                id="nav-item-1">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contenidoPrincipal2" onclick="actulizarNumeroPacman(2)"
+                                id="nav-item-2">Visión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contenidoPrincipal3" onclick="actulizarNumeroPacman(3)"
+                                id="nav-item-3">Misión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contenidoPrincipal4" onclick="actulizarNumeroPacman(4)"
+                                id="nav-item-4">Institucionalidad</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <div class="container-fluid divPromedio"
+            style="margin-top: 50px; float: left; text-align: center; height: 800px;">
+            <div class="container-fluid" style="margin-left: 15px;">
+                <br>
+                <h1 style="color: white; font-family: 'Anton', sans-serif; text-align: center;">Eventos</h1>
+                <br>
+                <h2 style="color: white; font-family: 'Anton', sans-serif; text-align: center;">Reunión de semillero
+                </h2>
+                <br>
+                <img  class="p-general-center" src="img/imagenes/evento.jpg" alt="Evento 10 de marzo" onclick="javascript:this.width=350;this.height=450"  ondblclick="javascript:this.width=450;this.height=550">
+                <BR></BR><br><br><br><br><br>
+                <h2 style="color: white; font-family: 'Anton', sans-serif; text-align: center;">Código QR</h2>
+                <br>
+                
+                <img class="evento" src="img/imagenes/reunion semillero Phoenix invitado especial (1).png" alt="Evento 10 de marzo"
+                    width="200px" height="200px">
+                    <br>
+                <h4 style="color: white; font-family: 'Anton', sans-serif; text-align: center;">(Escanea este código QR para ingresar)</h4>
+            </div>
+        </div>
+
+
+        <!-- Boton Abajo Melos -->
+        <div class="row" style="height: 85vh;"></div>
+        <div class="btn-siguiente" style="position: fixed; z-index: 3000; margin-left: 50%">
+            <center>
+                <div class="circuloT" id="circuloID">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="transform: rotate(-90deg);"
+                        id="elbicho"></span>
+                    <span class="sr-only">
+                        Siguiente
+                    </span>
+                </div>
+            </center>
+        </div>
+        <!-- Fin Boton -->
+
+        <div class="layer"></div>>
+    </div>
+
+
+
+
+    <div id="contenedor">
+        <div id="body">
+
+            <div class="container-fluid divPromedio" id="contenidoPrincipal1"
+                style="background: linear-gradient(-30deg,#0b67b3 0%, #7196BE 50%, #262626 50%, #607d8b 100%)">
+                <section class="main row" id="inicioP">
+                    <div class="row fila espacioForPostMenu">
+                        <div class="col-12">
+                            <center>
+                                <p class="tituloDiv">Proyectos de investigación</p><br><br>
+                            </center>
+                            <div class="row container text-white">
+                                <div class="col-md-4" data-aos="fade-up-right">
+                                    <center>
+                                        <a href="" id="lol">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <img src="img/iconosPresentacion/icono dron.png" alt="" width="125px" height="100px">
+                                        </a>
+                                        <p class="p-general-center">
+                                            Proyecto detención de vendedores ambulantes en horarios académicos de la
+                                            Uniminuto con el uso de teledetencion con naves de vuelo no tripuladas
+                                        </p>
+                                    </center>
+                                </div>
+                                <div class="col-md-4" data-aos="fade-down-left">
+                                    <center>
+                                        <a href="" id="lol">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <img src="img/iconosPresentacion/icono mujeres en ingeneria.png" alt="" width="125px" height="100px">
+                                        </a>
+                                        <p class="p-general-center">
+                                            Estado del arte de autoras mujeres en los ultimos 5 años de estudio en temas
+                                            de imagenes satelitales en Colombia y/o latinoamérica
+                                        </p>
+                                    </center>
+                                </div>
+                                <div class="col-md-4" data-aos="flip-right">
+                                    <center>
+                                        <a href="" id="lol">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <img src="img/iconosPresentacion/icono agrominer.png" alt="" width="125px" height="100px">
+                                        </a>
+                                        <p class="p-general-center">
+                                            Agrominer, Sistema de diagnóstico inteligente para la identificación de
+                                            plagas y enfermedades en cultivos
+                                        </p>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="row container-fluid text-white">
+                                <div class="col-md-3">
+
+                                </div>
+                                <div class="col-md-4" data-aos="flip-up" style="margin-left: 60px;">
+                                    <center>
+                                        <a href="" id="lol">
+                                            <img src="img/iconosPresentacion/monitoreo.png" alt="" width="125px;" height="100px">
+                                        </a>
+                                        <p class="p-general-center">Desarrollo de un sistema de monitoreo remoto, para
+                                            el seguimiento ecológico de mamíferos vegetación en el agro
+                                            parque Sabio Mutis.</p>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="container-fluid " id="contenidoPrincipal2">
+                <section class="main row paddingtop-general-50" id="goals">
+                    <div class="row fila espacioForPostMenu">
+                        <div class="col-1"></div>
+                        <div class="col-6">
+                            <h4>
+                                <p class="tituloDiv" style="color: #ffffff;"> <b>Visión</b></p>
+                                <br>
+                            </h4>
+                            <p class="p-general" style="color: #ffffff;">
+                                Ser en el año 2030 el semillero de investigación de la Corporación
+                                Universitaria Minuto de Dios, destacado en métodos para la adquisición,
+                                tratamiento y codificación de imágenes satelitales.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="container-fluid" id="contenidoPrincipal3">
+                <section class="main row paddingtop-general-50" id="aboutme">
+                    <div class="row fila-foto espacioForPostMenu" style="padding: 50px;">
+                        <div class="col-6">
+                        </div>
+                        <div class="col-6" style="padding-left: 40px;">
+                            <p class="tituloDiv" style="color: gray">Misión</p>
+                            <p class="p-general">
+                                los integrantes se encuentran en la búsqueda de conocimiento sistematizado
+                                a través del método científico, con el fin de generar aportes a la solución
+                                de problemas en el ámbito educativo e ingenieril relacionado al proceso
+                                de aprendizaje en el uso de tendencias tecnológicas y la IA (Inteligencia
+                                Artificial) <span id="dots">...</span>
+                                <span id="more">
+                                    y conforme al contexto que se abordará, sea: topografía,
+                                    cartografía y entre otros.
+
+                                </span>
+                            </p>
+                            <button onclick="leerMasF()" id="btn-readmore">Leer más</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <footer class="bg-dark text-white futa">
+                <div class="row" data-aos="zoom-in-up" id="contenidoPrincipal4" style="align-items: center;">
+                    <div class="col-6">
+                        <center>
+                            <h3>Institución</h3>
+                        </center>
+                        <style type="text/css">
+
+                        </style>
+                        <table class="table-contactus" border="0" style="margin-left: 90px;">
+                            <tr>
+                                <td>
+                                    <span>Bogotá D.C - Colombia</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <span>UNIMINUTO CALLE 80 SEDE PRINCIPAL</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>Programa ingeniería de sistemas</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>Semillero Phoenix</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <hr class="hr-vertical">
+                    <div class="col-5">
+                        <div class="redes">
+                            <center>
+                                <h4 style="padding-bottom: 10px; padding-top: -10px;">Corporación Universitaria Minuto de Dios</h4>
+                            </center>
+                            <center>
+                                <a href="#vacio">
+                                    <img src="img/imagenes/logo uniminuto.png"  alt="Logo" width="70%">
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Script del logo -->
+            <script type="text/javascript">
+
+                var nav_invisible = true;
+                var nav_black = false;
+
+                var menuInicio = '<div class="row"><div class="float-lefto"><img src="img/Info Logos/LOGO2.png" class="imgalv-1" alt="Logo" id="tituloImg" width=""></div></div><div class="row"><div class="float-lefto" style="padding: 0px 5px; padding-right: 20px;"><hr class="hr-horizontal-nav"></div></div><div class="row"><div class="float-lefto"><span class="titulo-nav-324">Robertson Law, LLC</span></div></div>';
+
+                var menuFinal = '<div class="float-lefto"><img src="img/Info Logos/LOGO2.png" class="imgalv-2" alt="Logo" id="tituloImg" width=""></div><div class="float-lefto" style="padding: 0px 5px; padding-right: 20px;"><hr class="hr-vertical-nav"></div><div class="float-lefto"><span class="titulo-nav-324 titulo-nav-324-pdto">Robertson Law, LLC</span></div>';
+
+                function setMenu(type) {
+                    var logocont = document.getElementById("logo-container");
+                    type === 1 ? logocont.innerHTML = menuFinal : type === 2 ? logocont.innerHTML = menuInicio : type;
+                    type === 1 ? (nav_invisible = false, nav_black = true) : type === 2 ? (nav_black = false, nav_invisible = true) : type;
+                }
+
+            </script>
+
+            <!--JQuery => NavBar -->
+            <script>
+                $(window).scroll(function () {
+                    if ($("#menuFinal").offset().top > 56) {
+                        $("#menuFinal").removeClass("cabeceraInv");
+                        $("#menuFinal").addClass("bg-dark navbar-dark nav-pills");
+                        $("#inUl").addClass("inUl");
+                        $("#tituloIng2").removeClass("logo2");
+                        $("#tituloIng2").addClass("logo4");
+                        $("#tituloIng3").removeClass("logo3");
+                        $("#tituloIng3").addClass("logo5");
+                        nav_invisible === true ? setMenu(1) : nav_invisible;
+                    } else {
+                        $("#menuFinal").removeClass("bg-dark navbar-dark nav-pills");
+                        $("#menuFinal").addClass("cabeceraInv");
+                        $("#inUl").removeClass("inUl");
+                        $("#tituloIng2").removeClass("logo4");
+                        $("#tituloIng2").addClass("logo2");
+                        $("#tituloIng3").removeClass("logo5");
+                        $("#tituloIng3").addClass("logo3");
+                        nav_black === true ? setMenu(2) : nav_black;
+                    }
+                });
+            </script>
+
+            <!-- JS => Flecha Scroll -->
+            <script type="text/javascript">
+                var flecha = document.getElementById("circuloID");
+                var numero = 0;
+
+                flecha.onclick = function () {
+                    numero++;
+                    numero = numero > 5 ? 1 : numero;
+                    location.href = "#contenidoPrincipal" + numero;
+                    numero === 5 ? $("#nav-item-4").addClass("active") : $("#nav-item-" + (numero - 1)).removeClass("active");
+                    numero > 0 ? $("#nav-item").removeClass("active") : numero;
+                    numero != 5 && numero != 4 ? $("#nav-item-4").removeClass("active") : numero;
+                    $("#nav-item-" + numero).addClass("active");
+                }
+
+            </script>
+
+
+            <!-- JS => Flecha Scroll -->
+            <script type="text/javascript">
+                var flecha = document.getElementById("circuloID");
+                var numero = 0;
+
+                flecha.onclick = function () {
+                    numero++;
+                    numero = numero > 5 ? 1 : numero;
+                    location.href = "#contenidoPrincipal" + numero;
+                    numero === 5 ? $("#nav-item-4").addClass("active") : $("#nav-item-" + (numero - 1)).removeClass("active");
+                    numero > 0 ? $("#nav-item").removeClass("active") : numero;
+                    numero != 5 && numero != 4 ? $("#nav-item-4").removeClass("active") : numero;
+                    $("#nav-item-" + numero).addClass("active");
+                }
+
+                function actulizarNumeroPacman(n) {
+                    numero = n;
+                }
+
+                function mostrar() {
+                    document.getElementById("noloc").innerHTML = numero;
+                }
+            </script>
+
+            <!-- JS => Leer mas-->
+            <script>
+                function leerMasF() {
+                    var dots = document.getElementById("dots");
+                    var moreText = document.getElementById("more");
+                    var btnText = document.getElementById("btn-readmore");
+                    var divo = document.getElementById("aboutme");
+
+                    if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "Leer mas";
+                        moreText.style.display = "none";
+                        divo.style.height = "100vh";
+                    } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "menos";
+                        moreText.style.display = "inline";
+                        divo.style.height = "auto"; v
+                    }
+                }
+            </script>
+
+            <!--AOS-->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
+
+
+
+            <!-- add active with click -->
+            <script>
+                var btnContainer = document.getElementById("listNav");
+                var btns = btnContainer.getElementsByClassName("nav-link");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener("click", function () {
+                        var wea = i;
+                        var current = document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replace(" active", "");
+                        this.className += " active";
+                    });
+                }
+            </script>
+
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+</body>
+
+</html>
+
+<!--fin html sujeto a cambios futuros-->

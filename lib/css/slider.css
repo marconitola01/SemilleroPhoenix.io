@@ -1,0 +1,55 @@
+/* Slider automatiko :v */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slidur li {
+    display: table-cell;
+}
+
+
+.slidur img {
+    width: 1000px;
+    height: 500px;
+}
+
+.slidur {
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slidur ul {
+    position: absolute;
+    animation-name: alovorgo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.slida {
+    margin: 0 auto;
+    margin-left: 10%;
+}
+
+@keyframes alovorgo{
+    0%{
+        left: 0;
+    }   
+    25%{
+        left: -1000px;
+    }
+    50%{ 
+        left: -2000px;
+    }
+    75%{
+        left: -1000px;
+    }
+    100%{
+        left: 0px;
+    }
+    
+}

@@ -1,0 +1,466 @@
+/* Cabecera parametros inicio */
+
+header#cabecera {
+	text-align: center;		
+}
+
+.navPr {	
+	padding-top: 10px;
+}
+
+/* .navPr li {	
+	/* Extra 
+} */
+
+/* Cabecera parametros fin */
+
+/* Cabecera invisible Inicio */ 
+
+.cabeceraInv {
+	text-align: center;		
+}
+
+.cabeceraInv li {
+	text-align: center;		
+}
+
+.cabeceraInv a.active {
+
+	  background-color: #7196BE;
+  	color: white;
+}
+
+.cabeceraInv li:hover {
+  	animation-duration: 0.7s;  
+  	animation-name: agrandarMakia;
+  	background-color: #7196BE;
+  	color: white;
+}
+
+.cabeceraInv li a:hover {
+	color: white;
+}
+
+@keyframes agrandarMakia {  
+
+  from {  	
+  	background-color: transparent;
+  	color: white;
+  }
+
+  to {  	
+  	background-color: #7196BE;
+  	color: white;
+  }
+}
+
+.cabeceraInv li ul li {
+	animation-duration: 0.7s;  
+  	animation-name: agrandarMakia;
+	background-color: #7196BE; /*#2727E5;*/
+	width: 50px;
+}
+
+.cabeceraInv li ul li a:hover {
+	background-color:#7196BE;
+}
+
+.nada:hover {
+ 	filter: blur(5px);
+}
+
+/* Cabecera invisible Fin */ 
+
+.titulo {
+	padding-left: 10px;
+	color: white;
+	font-size: 40px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.titulo a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Estilos para la imagen logo sin mover el scroll */
+
+.titulo-img {
+	animation-duration: 1s;  
+  	animation-name: agrandarLogo;
+	  width: 78px;
+	  height: 80px;  	
+	margin-right: 10px;
+}
+
+.logo1{
+	position: relative;
+	width: 200px;
+	padding-top: -10px;
+	margin-top: 0px;
+	z-index: 3;
+}
+
+.logo2{
+	position: absolute;
+	animation-duration: 1s;
+	animation-name: animacionLog1;
+	width: 200px;
+	margin-top: 50px;
+	margin-left: -200px;
+	z-index: 2;
+}
+
+.logo3{
+	position: absolute;
+	animation-duration: 1s;
+	animation-name: animacionLog3;
+	width: 200px;
+	transform: rotate(0deg);
+	margin-top: 55px;
+	margin-left: -201px;
+	z-index: 1;
+}
+
+
+.logo4{
+	position: absolute;
+	animation-duration: 1s;
+	animation-name: animacionLog2;
+	width: 250px;
+	margin-top: 0px;
+	margin-left: 10px;
+	z-index: 1;
+}
+
+.logo5{
+	position: absolute;
+	animation-duration: 1s;
+	animation-name: animacionLog5;
+	width: 70px;	
+	transform: rotate(90deg);
+	margin-top: 30px;
+	margin-left: -30px;
+	z-index: 1;
+}
+
+
+@keyframes animacionLog1{
+	from{
+		width: 250px;
+		margin-top: 0px;
+		margin-left: 10px;
+	}
+	to{
+		width: 200px;
+		margin-top: 50px;
+		margin-left: -200px;
+	}
+}
+@keyframes animacionLog2{
+	from{
+		width: 200px;
+		margin-top: 50px;
+		margin-left: -200px;
+	}
+	to{
+		width: 250px;
+		margin-top: 0px;
+		margin-left: 10px;
+	}
+}
+
+@keyframes animacionLog3{
+	from{
+		width: 70px;		
+		transform: rotate(90deg);
+		margin-top: 30px;
+		margin-left: -30px;
+	}
+	to{
+		width: 200px;
+		transform: rotate(0deg);
+		margin-top: 55px;
+		margin-left: -201px;
+	}
+}
+
+@keyframes animacionLog5{
+	from{		
+		width: 200px;
+		transform: rotate(0deg);
+		margin-top: 55px;
+		margin-left: -201px;
+	}
+	to{
+		width: 70px;		
+		transform: rotate(90deg);
+		margin-top: 30px;
+		margin-left: -30px;
+	}
+}
+
+
+
+.titulo-img li:hover {
+	background-color: red;
+}
+
+/* Estilos para la imagen logo despues de mover el scroll */
+
+.tituloWS {
+	
+	padding: 5px;
+	padding-right: 7px;
+	border-radius: 30px;
+
+	/* nuevo arriba*/
+	animation-duration: 1s;  
+  	animation-name: degrandarLogo;  	
+  	width: 58px;
+	height: 60px;
+	margin-right: 15px;
+}
+
+/* Animacion de degrado */
+
+@keyframes degrandarLogo {
+	
+	from {		
+		width: 78px;
+		height: 80px;
+		margin-right: 10px;
+	}
+
+	to {
+		width: 58px;
+		height: 60px;
+		margin-right: 15px;
+	}
+}
+
+/* Agrande :v */
+@keyframes agrandarLogo {
+
+	from {
+		width: 58px;
+		height: 60px;
+		margin-right: 10px;
+	}
+
+	to {		
+		width: 78px;
+		height: 80px;
+		margin-right: 10px;
+	}
+}
+
+/* Estados href */
+
+.linkeds a {
+	color: white;
+}
+
+.linkeds a:hover {
+	color: #3361ff; 
+}
+
+.activo a {
+	color: gray;
+}
+
+/* Fin Estados href */
+
+/* Desplegable inicio */
+
+ul, ol {
+	list-style:none;
+}
+
+.nav > li {
+	float:left;
+}
+
+.nav li a {
+	text-decoration:none;
+	padding:10px 20px; 
+	display:block;
+}
+
+/* .nav li a:hover {
+	
+} */
+
+.nav li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.nav li:hover > ul {
+	display:block;
+}
+
+.nav li ul li {
+	position:relative;
+	padding-right: 0px;
+	width: 200px;
+}
+
+.nav li ul li ul {
+	right:-190px;
+	top:0px;
+}
+
+/* inUl Act */
+
+.inUl li ul li {
+	background-color: #7196BE;
+}
+
+.inUl li ul li a:hover {
+	background-color:#7196BE; /*434343*/
+}
+
+/* .nav-pills .nav-link {
+    border-radius: 0;
+    
+} */
+
+/* Desplegable fin */
+
+/* color linkanchor  */
+.nav-pills .nav-link.active,.nav-pills .show>.nav-link{
+	color:#fff;
+	background-color:#7196be; 
+}
+
+/* collapse */
+/* #demo {
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -o-transition: width 1s ease;
+    transition: width 1s ease;
+    
+    display: inline-block; 
+    overflow: hidden;
+    white-space: normal;
+    background:#343a40;
+     vertical-align: middle; 
+    line-height: 30px;
+    height: 340px;
+
+    width: 0px;
+}
+#demo.in {
+    width: 520px;
+}
+
+.card{
+	border-radius: 0%;
+	border-color: #343a40;
+
+}
+
+.card-img{
+	border-radius: 0%;
+} */
+
+
+/* Img Logo Final */
+
+.imgalv-1 { 
+    animation-name: logogrande;
+    animation-duration: 0.5s;
+    width: 300px; 
+}
+
+
+@keyframes logogrande {
+    from {
+        width: 250px;
+    }
+
+    to {
+        width: 300px;
+    }
+}
+
+.imgalv-2 { 
+    animation-name: logopeque;
+    animation-duration: 0.5s;
+    width: 250px; 
+}
+
+
+@keyframes logopeque {
+    from {
+        width: 350px;
+    }
+
+    to {
+        width: 250px;
+    }
+}
+
+.hr-vertical-nav{  
+    border: none;
+    border-left: 1px solid hsla(200, 10%, 50%,100);
+    height: 35px;
+    width: 1px;       
+    background-color: white;
+}
+
+@keyframes hrrotar {
+    from {
+        border: none;
+        border-left: 1px solid hsla(200, 10%, 50%,100);
+        height: 1px;
+        width: 450px;       
+        background-color: white;
+    }
+
+    to {
+        border: none;
+        border-left: 1px solid hsla(200, 10%, 50%,100);
+        height: 35px;
+        width: 1px;       
+        background-color: white;
+    }
+}
+
+.hr-horizontal-nav {
+    background-color: white; 
+    width: 300px;
+}
+
+.titulo-nav-324 {
+    font-family: "Times New Roman";
+    font-size: 30px;
+    padding-top: 0px;
+}       
+
+.titulo-nav-324-pdto {
+    padding-top: 10px;
+}                
+
+.float-lefto{
+    float: left;
+}
+
+.bordex {
+    border: 1px solid black;
+}
+
+.contenedor-a div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.padding-top-nav {
+    padding-bottom: 81px;
+}
+
+/* Fin Img Logo*/
+
